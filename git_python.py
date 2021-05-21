@@ -9,6 +9,8 @@ class MyWindow:
         self.t3=Entry()
         self.btn1 = Button(win, text='Add')
         self.btn2=Button(win, text='Subtract')
+        self.btn3 = Button(win, text='Multiply')
+        self.btn4 = Button(win, text='Divide')
         self.lbl1.place(x=100, y=50)
         self.t1.place(x=200, y=50)
         self.lbl2.place(x=100, y=100)
@@ -16,8 +18,12 @@ class MyWindow:
         self.b1=Button(win, text='Add', command=self.add)
         self.b2=Button(win, text='Subtract')
         self.b2.bind('<Button-1>', self.sub)
+        self.b3=Button(win, text='Multiply', command=self.multiply)
+        self.b4=Button(win, text='Divide', command=self.divide)
         self.b1.place(x=100, y=150)
         self.b2.place(x=200, y=150)
+        self.b3.place(x=300, y=150)
+        self.b4.place(x=400, y=250)
         self.lbl3.place(x=100, y=200)
         self.t3.place(x=200, y=200)
     def add(self):
@@ -32,7 +38,18 @@ class MyWindow:
         num2=int(self.t2.get())
         result=num1-num2
         self.t3.insert(END, str(result))
-
+    def multiply(self, event):
+        self.t3.delete(0, 'end')
+        num1=int(self.t1.get())
+        num2=int(self.t2.get())
+        result=num1*num2
+        self.t3.insert(END, str(result))
+    def divide(self, event):
+        self.t3.delete(0, 'end')
+        num1=int(self.t1.get())
+        num2=int(self.t2.get())
+        result=num1/num2
+        self.t3.insert(END, str(result))
 window=Tk()
 mywin=MyWindow(window)
 window.title('Hello Python')
