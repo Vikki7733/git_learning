@@ -2,7 +2,7 @@ from tkinter import *
 
 window = Tk()
 
-window.title("Welcome to LikeGeeks app")
+window.title("Chall bey")
 
 window.geometry('350x200')
 
@@ -18,7 +18,7 @@ def clicked():
 
     lbl.configure(text="Button was clicked !!")
 
-btn = Button(window, text="Click Me", command=clicked)
+btn = Button(window, text="AAAAHhhhhh!!!!!", command=clicked)
 
 btn.grid(column=2, row=0)
 
