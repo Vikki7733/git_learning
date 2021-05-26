@@ -2,7 +2,7 @@
 void main(){
 
 int i=0;
-for(i=0;i<=10;i++)
-printf("goodbye!!");
+if(i>0)
+return fact*(fact-1)
 
 }
