@@ -1,11 +1,8 @@
 #include<stdio.h>
 void main(){
-<<<<<<< HEAD
+
 int i=0;
 for(i=0;i<=10;i++)
 printf("goodbye!!");
-=======
-printf("HEllo World");
-printf("Goodbye!");
->>>>>>> f6096b1ad27c71fae42f9dec4d47256715a13df9
+
 }
